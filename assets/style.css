@@ -16,7 +16,7 @@
 }
 /* Header Styling*/
 header a {
-    color: var(--black);
+    color: var(--pink);
     text-decoration: none;
     height: 60px;
     padding: 0 15px;
@@ -53,8 +53,8 @@ header nav ul li:nth-child(3) {
 }
 
 header nav ul li:nth-child(4) {
-    background-color: var(--red);
-    border-right:var(--blue) solid 20px;
+    background-color: var(--blue);
+    border-right:var(--red) solid 20px;
 }
 
 header nav ul li:nth-child(5) {
@@ -86,14 +86,23 @@ body {
       text-align: center;
  
   }
+/* About Me Section */
+  .about-me-container {
+      padding-top: 40px;
+      margin:auto;
+      width:50%;
+  }
 
   #bio-image {
-      height:500px;
+    height:500px;
      border-left: 1px solid var(--high-yellow);
      border-bottom:1px solid var(--teal);
      border-radius:50%;
      height:300px;
-      
+     display:block;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 20px;
   }
 
   /* Contact Info Styling*/
