@@ -143,14 +143,19 @@ body {
   #contact-info a {
       color: var(--high-yellow);
       text-decoration: none;
-      display:none;
+      text-align:center;
   }
 
   #contact-info a:hover {
-
       color: var(--teal);
       text-shadow: -1px 0 var(--red);
 
   }
 
-  
+  /* Responsive Styling */
+
+  @media only screen and (max-width:300px) {
+    header nav ul li {
+        display: block;
+  }
+}
