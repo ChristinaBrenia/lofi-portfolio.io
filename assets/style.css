@@ -97,23 +97,37 @@ body {
         padding-top:10px;
     }
 
-  #where-are-you h2 {
+  body h2 {
       border-bottom:1px solid var(--pink);
       padding: 5px 5px;
       text-align:center;
   }
 
-  #bio-image {
-    height:500px;
+  #center-image {
+    /* height:500px; */
      border-left: 1px solid var(--high-yellow);
      border-bottom:1px solid var(--teal);
      border-radius:50%;
-     height:300px;
+     /* height:300px; */
      display:block;
      margin-left: auto;
      margin-right: auto;
      margin-top: 20px;
   }
+
+  /* Flex box with work */
+
+   #christina-work {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  } 
+
+  #christina-work p {
+      text-align: center;
+  }
+
 
   /* Contact Info Styling*/
   #contact-info a {
