@@ -128,11 +128,22 @@ body {
       text-align: center;
   }
 
+  #christina-work div:nth-child(1) {
+      flex-grow: 4;
+      text-align: center;
+  }
+
+ .hover:hover {
+    background-color: var(--green); 
+    border-radius: 50%;
+  }
+
 
   /* Contact Info Styling*/
   #contact-info a {
       color: var(--high-yellow);
       text-decoration: none;
+      display:none;
   }
 
   #contact-info a:hover {
