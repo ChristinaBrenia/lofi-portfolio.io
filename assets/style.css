@@ -87,10 +87,20 @@ body {
  
   }
 /* About Me Section */
-  .about-me-container {
+  .section-container {
       padding-top: 40px;
       margin:auto;
       width:50%;
+}
+
+    .section-container p {
+        padding-top:10px;
+    }
+
+  #where-are-you h2 {
+      border-bottom:1px solid var(--pink);
+      padding: 5px 5px;
+      text-align:center;
   }
 
   #bio-image {
