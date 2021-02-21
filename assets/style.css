@@ -13,7 +13,6 @@
     --red: #fb0102;
     --blue:#0301fc;
     --black: #000000;
-
     background-color: var(--black);
 }
 /* Header Styling*/
@@ -80,7 +79,7 @@ body {
       text-shadow: -1px 0 var(--red);
   }
    h1 {
-      color: var(--white);
+      color: var(--white)!important;
       margin: 0 auto;
       font-weight: lighter;
       text-shadow: -1px 0 var(--teal);
@@ -95,13 +94,16 @@ body {
 }
 
     .section-container p {
-        padding-top:10px;
+        padding:1rem;
+        text-align: center;
+        justify-content: center;
     }
 
   body h2 {
-      border-bottom:1px solid var(--pink);
-      padding: 5px 5px;
+      /* border-bottom:1px solid var(--pink); */
+      padding: 3rem ;
       text-align:center;
+      color: white!important;
   }
 
   #center-image {
@@ -123,6 +125,8 @@ body {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+    border-left: solid 1rem var(--pink);
+    border-right: solid 1rem var(--pink);
   } 
 
   #christina-work p {
@@ -141,11 +145,17 @@ body {
   }
 
 
+  #contact-info {
+      text-align: center;
+  }
+
   /* Contact Info Styling*/
   #contact-info a {
       color: var(--high-yellow);
       text-decoration: none;
-      text-align:center;
+    font-size: x-large;
+    padding-bottom: 1rem;
+    
   }
 
   #contact-info a:hover {
@@ -154,10 +164,59 @@ body {
 
   }
 
+/* Bars from Code Pen */
+
+/* #bars {
+    height: 3px;
+    left: 50%;
+    margin: -30px 0 0 -20px;
+    position: absolute;
+    top: 50%;
+    width: 40px;
+}
+
+.bar {
+   background: var(--pink);
+    bottom: 1px;
+    height: 3px;
+    position: absolute;
+    width: 3px;      
+    animation: sound 0ms -800ms linear infinite alternate;
+}
+
+@keyframes sound {
+    0% {
+       opacity: .35;
+        height: 3px; 
+    }
+    100% {
+        opacity: 1;       
+        height: 28px;        
+    }
+}
+
+.bar:nth-child(1)  { left: 1px; animation-duration: 474ms; }
+.bar:nth-child(2)  { left: 5px; animation-duration: 433ms; }
+.bar:nth-child(3)  { left: 9px; animation-duration: 407ms; }
+.bar:nth-child(4)  { left: 13px; animation-duration: 458ms; }
+.bar:nth-child(5)  { left: 17px; animation-duration: 400ms; }
+.bar:nth-child(6)  { left: 21px; animation-duration: 427ms; }
+.bar:nth-child(7)  { left: 25px; animation-duration: 441ms; }
+.bar:nth-child(8)  { left: 29px; animation-duration: 419ms; }
+.bar:nth-child(9)  { left: 33px; animation-duration: 487ms; }
+.bar:nth-child(10) { left: 37px; animation-duration: 442ms; }​ */
+
   /* Responsive Styling */
 
   @media screen and (max-width:700px) {
     header nav ul li {
         display: block;
   }
+  #contact-info a {
+      display: block;
+      
+    }
+    #contact-info span {
+        display: none;
+    }
 }
